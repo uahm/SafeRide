@@ -1,0 +1,139 @@
+{% extends "layout.html"  %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parents View</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: #f4f4f9; */
+            background-color: #1A202C;
+
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            width: 90%;
+            margin-top: 20px;
+        }
+
+        .primary-btn {
+            background-color: #82c0f3;
+            color: white;
+            border: #4299e1;
+            border-radius:5px ;
+            height:30px;
+            width:100px;
+            display: block; /* Makes the button a block element */
+            margin: 0 auto; 
+            margin-top: 50px;
+        }
+
+        .left-container,.middle-container, .right-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 28%;
+        }
+
+        /* .bottom-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            margin-top: 20px;
+        } */
+
+        .left-container h2,.middle-container h2, .right-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+/* 
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 10px;
+        } */
+    </style>
+</head>
+<body>
+    {% block header %}  
+    <div class="dropdown">
+        <button class="dropdown-btn">
+            Welcome, {{ student.name }} <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="{% url 'parents_view' %}">Student Profile</a>
+            <a href="{% url 'home' %}">Logout</a>
+        </div>
+    </div>
+
+    
+    {% endblock %}
+    <div class="container2">
+        <!-- Left Container -->
+        <div class="left-container">
+            <h2>Student Details</h2>
+            {% if student %}
+                <p><strong>Name:</strong> {{ student.name }}</p>
+                <p><strong>Roll Number:</strong> {{ student.rollno }}</p>
+                <p><strong>Class:</strong> {{ student.stuclass }}</p>
+                <p><strong>Phone Number:</strong> {{ student.student_contact }}</p>
+                <p><strong>Parent's Phone Number:</strong> {{ student.parent_contact }}</p>
+                <p><strong>Bus Route:</strong> {{ student.busroute }}</p>
+            {% else %}
+                <p>No student details available.</p>
+            {% endif %}
+        </div>
+        <!-- Right Container -->
+        <div class="middle-container">
+            <h2>Travel Status</h2>
+            {% if display_status %}
+                <p><strong>Status:</strong> {{ display_status.status }}</p>
+                <p><strong>Current Date & Time:</strong> {{ display_status.current_datetime }}</p>
+                <p><strong>Student Status:</strong> {{ display_status.student_status }}</p>
+                <p><strong>Verified:</strong> {{ display_status.varified|yesno:"Yes,No" }}</p>
+            {% else %}
+                <p>No travel status available.</p>
+            {% endif %}
+        </div>
+         <!-- Right Container -->
+    <div class="right-container">
+        <h2>Live Location Of Bus</h2>
+        
+        <button class="btn primary-btn"><a href="{% url 'map' %}">Track Bus</a></button>
+    </div>
+    </div>
+   
+
+    
+    <!--<Bottom Container>
+     <div class="bottom-container">
+        <h2>Additional Information</h2>
+        <iframe src="map.html" title="Bus Tracker"></iframe>
+      
+    </div> -->
+</body>
+</html>
+{% endblock %}
