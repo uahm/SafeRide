@@ -96,7 +96,7 @@ Google Maps API
 5.2 Setup Steps
 
 1. Clone the Repository
-git clone https://github.com/your-repo/SafeRide.git
+git clone https://github.com/uahm/SafeRide.git
 cd SafeRide
 
 2. Install Dependencies
