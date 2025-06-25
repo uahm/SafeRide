@@ -83,6 +83,8 @@ Alerts Table: (ID, Student ID, Time, Alert Type)
 
 ---
 
+
+
 5. Installation and Deployment
 
 5.1 Prerequisites
@@ -110,3 +112,19 @@ python manage.py runserver
 
 5. Access the Application
 Open http://127.0.0.1:8000/ in a browser.
+
+
+
+---
+
+
+
+6. Screenshots
+   ![Home Page]("C:\Users\Umair Ahmed\Pictures\Screenshots\OPscreens\Screenshot 2025-04-16 023214.png")
+   ![Key Features]("C:\Users\Umair Ahmed\Pictures\Screenshots\OPscreens\Screenshot 2025-04-16 023259.png")
+   ![Adding Student]("C:\Users\Umair Ahmed\Pictures\Screenshots\OPscreens\Screenshot 2025-04-16 023525.png")
+   ![Admin Login]("C:\Users\Umair Ahmed\Pictures\Screenshots\OPscreens\Screenshot 2025-04-16 023750.png")
+   ![Admin Portal]("C:\Users\Umair Ahmed\Pictures\Screenshots\OPscreens\Screenshot 2025-04-16 023828.png")
+   ![Atendence Page]("C:\Users\Umair Ahmed\Pictures\Screenshots\OPscreens\Screenshot 2025-04-16 025600.png")
+   ![Parent Login]("C:\Users\Umair Ahmed\Pictures\Screenshots\OPscreens\Screenshot 2025-04-16 024659.png")
+   ![Map]("C:\Users\Umair Ahmed\Pictures\Screenshots\OPscreens\Screenshot 2025-04-16 025338.png")
