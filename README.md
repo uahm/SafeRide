@@ -120,11 +120,25 @@ Open http://127.0.0.1:8000/ in a browser.
 
 
 6. Screenshots
+![Screenshot 2025-04-16 023214](https://github.com/user-attachments/assets/8564da70-bb79-499e-b6b3-55a831f5fdb3)
+![Screenshot 2025-04-16 023259](https://github.com/user-attachments/assets/5d0296bb-b865-4ac8-ad3a-6cd2b2a4dfd7)
+![Screenshot 2025-04-16 023525](https://github.com/user-attachments/assets/4dd5f830-b515-4a1b-bcb0-e3411fef5a92)
+![Screenshot 2025-04-16 023750](https://github.com/user-attachments/assets/62ef908b-ea9f-4b94-97eb-9a1b60592c10)
+![Screenshot 2025-04-16 023828](https://github.com/user-attachments/assets/0bbe17ea-6a34-4f5e-a492-31af69f462f1)
+![Screenshot 2025-04-16 025600](https://github.com/user-attachments/assets/32b6ecf6-3935-4cab-b5d0-2201ef296e88)
+![Screenshot 2025-04-16 024659](https://github.com/user-attachments/assets/5ed81756-354d-4187-8609-9594e8761311)
+![Screenshot 2025-04-16 025338](https://github.com/user-attachments/assets/60270917-5429-499b-8300-80a8c90a0429)
+
+
    ![Home Page]("C:\Users\Umair Ahmed\Pictures\Screenshots\OPscreens\Screenshot 2025-04-16 023214.png")
+
    ![Key Features]("C:\Users\Umair Ahmed\Pictures\Screenshots\OPscreens\Screenshot 2025-04-16 023259.png")
    ![Adding Student]("C:\Users\Umair Ahmed\Pictures\Screenshots\OPscreens\Screenshot 2025-04-16 023525.png")
+
    ![Admin Login]("C:\Users\Umair Ahmed\Pictures\Screenshots\OPscreens\Screenshot 2025-04-16 023750.png")
+
    ![Admin Portal]("C:\Users\Umair Ahmed\Pictures\Screenshots\OPscreens\Screenshot 2025-04-16 023828.png")
    ![Atendence Page]("C:\Users\Umair Ahmed\Pictures\Screenshots\OPscreens\Screenshot 2025-04-16 025600.png")
    ![Parent Login]("C:\Users\Umair Ahmed\Pictures\Screenshots\OPscreens\Screenshot 2025-04-16 024659.png")
    ![Map]("C:\Users\Umair Ahmed\Pictures\Screenshots\OPscreens\Screenshot 2025-04-16 025338.png")
+
