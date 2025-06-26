@@ -1,149 +1,158 @@
-# SafeRide
-1. Introduction
+# 🚌 SafeRide – A Smart School Bus Safety System Using Edge Computing
 
-1.1 Purpose
-The School Bus Safety System is designed to enhance student safety during transportation. It uses face recognition, GPS tracking, and SMS/WhatsApp notifications to inform parents when their child enters/exits the bus. It also alerts the admin when an unknown person tries to enter.
-
-1.2 Scope
-*Face Recognition: Identifies students and logs their entry/exit.
-*GPS Tracking: Captures and shares real-time bus location.
-*SMS/WhatsApp Notification: Alerts parents about their child’s movement.
-*Admin Panel: Manages student registrations, attendance, routes, and alerts.
-*Parent Portal: Provides access to bus location and notifications.
-
-1.3 Technologies Used
-Frontend: HTML, CSS
-Backend: Django
-Database: SQLite
-APIs: OpenCV (for face recognition), Google Maps API (for GPS), Twilio API (for SMS/WhatsApp)
-
+SafeRide is an AI-powered, real-time school bus monitoring system that ensures the **safety and security of students** during their transportation. The system uses **face recognition**, **GPS tracking**, and **automated notifications** to keep parents and administrators informed — all in real-time.
 
 ---
 
+## 🔍 1. Introduction
 
-2. Functional Requirements
+### 🎯 1.1 Purpose
+SafeRide enhances school transport safety by:
+- Recognizing students through face recognition
+- Sending real-time SMS/WhatsApp alerts to parents
+- Alerting the admin in case of unauthorized entry
 
-2.1 User Roles
+### 🌐 1.2 Scope
+- **Face Recognition:** Track student entry/exit using facial biometrics  
+- **GPS Tracking:** Live tracking of school bus location  
+- **SMS/WhatsApp Notifications:** Instant alerts to parents  
+- **Admin Panel:** Manage students, attendance, routes, and alerts  
+- **Parent Portal:** Monitor bus location and receive notifications  
 
-1. Admin
-Register students and manage profiles.
-Monitor attendance logs.
-Track bus routes and manage alerts.
+### 💻 1.3 Technologies Used
 
-2. Parents
-Receive real-time notifications about student entry/exit.
-Access live bus tracking.
-
-
-2.2 Features
-Face Recognition System:
-Detect and recognize students entering/exiting.
-Store logs in the database.
-Trigger notifications to parents.
-
-GPS Tracking System:
-Using neo 8m get the tracking.
-Display bus location to parents.
-
-Notification System:
-Send entry/exit alerts to parents via SMS/WhatsApp.
-Alert admin if an unknown person attempts entry.
-
-Admin Panel:
-Dashboard for student management, attendance logs, and bus tracking.
-
+| Component  | Technology |
+|------------|------------|
+| Frontend   | HTML, CSS  |
+| Backend    | Django     |
+| Database   | SQLite     |
+| Face Recognition | OpenCV |
+| GPS        | Neo 8M GPS + Google Maps API |
+| Messaging  | Twilio API for SMS & WhatsApp |
 
 ---
 
+## ✅ 2. Functional Requirements
 
-3. Non-Functional Requirements
-Security: Encrypt student data and restrict unauthorized access.
-Scalability: Handle multiple buses and students efficiently.
-Performance: Fast recognition and notification delivery.
+### 👤 2.1 User Roles
 
+**Admin**
+- Register students
+- Monitor attendance and bus movement
+- Receive alerts on stranger detection
+
+**Parents**
+- Receive entry/exit notifications
+- View live bus location
+
+### ⚙️ 2.2 Core Features
+
+- **🎯 Face Recognition:**  
+  Detects and logs student presence using face data
+
+- **🛰️ GPS Tracking:**  
+  Live tracking via Neo 8M module integrated with Google Maps
+
+- **📲 Notifications:**  
+  Instant SMS alerts to parents and admin
+
+- **📋 Admin Panel:**  
+  Dashboard for managing data and monitoring attendance
 
 ---
 
+## 🧱 3. System Design
 
-4. System Design
+### 🧭 3.1 Architecture
 
-4.1 Architecture
-Frontend: Displays student data, tracking, and alerts.
-Backend: Handles authentication, data processing, and notifications.
-Database: Stores student details, logs, and attendance.
-APIs: Integrates face recognition, GPS, and notifications.
+```plaintext
+[Camera] → [Face Recognition + GPS] → [Django Backend] → [SQLite DB] → [Twilio/Map API] → [Admin Panel + Parent Portal]
+````
 
-4.2 Database Schema
-Students Table: (ID, Name, Parent Contact, Bus ID, Face Data)
-Attendance Table: (Student ID, Time, Location, Status)
-Bus Table: (Bus ID, Route, Current Location)
-Alerts Table: (ID, Student ID, Time, Alert Type)
+* **Frontend:** Displays live location, logs, and notifications
+* **Backend:** Processes data, controls authentication and messaging
+* **Database:** Stores student info, attendance, alerts
+* **APIs:** Face Recognition, GPS tracking, Twilio notifications
 
+### 🗃️ 3.2 Database Schema
 
+| Table      | Fields                                      |
+| ---------- | ------------------------------------------- |
+| Students   | ID, Name, Parent Contact, Bus ID, Face Data |
+| Attendance | Student ID, Time, Location, Status          |
+| Bus        | Bus ID, Route, Current Location             |
+| Alerts     | ID, Student ID, Time, Alert Type            |
 
 ---
 
+## 🚀 4. Installation & Deployment
 
+### 🔧 4.1 Prerequisites
 
-5. Installation and Deployment
+* Python 3.x
+* Django
+* SQLite
+* OpenCV
+* Twilio API
+* Google Maps API
 
-5.1 Prerequisites
-Python 3.x
-Django
-SQLite
-OpenCV
-Twilio API
-Google Maps API
+### 🛠️ 4.2 Setup Steps
 
-5.2 Setup Steps
-
-1. Clone the Repository
+```bash
+# 1. Clone the repository
 git clone https://github.com/uahm/SafeRide.git
 cd SafeRide
 
-2. Install Dependencies
+# 2. Install dependencies
 pip install -r requirements.txt
 
-3. Run Migrations
+# 3. Run migrations
 python manage.py migrate
 
-4. Start the Server
+# 4. Start the server
 python manage.py runserver
+```
 
-5. Access the Application
-Open http://127.0.0.1:8000/ in a browser.
-
-
+👉 Open your browser and go to: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 ---
 
+## 🖼️ 5. Screenshots
 
+### 🏠 Home Page
 
-6. Screenshots
+![Home](https://github.com/user-attachments/assets/8564da70-bb79-499e-b6b3-55a831f5fdb3)
 
-Home Page
-![Screenshot 2025-04-16 023214](https://github.com/user-attachments/assets/8564da70-bb79-499e-b6b3-55a831f5fdb3)
+### ✨ Key Features
 
-Key Features
-![Screenshot 2025-04-16 023259](https://github.com/user-attachments/assets/5d0296bb-b865-4ac8-ad3a-6cd2b2a4dfd7)
+![Features](https://github.com/user-attachments/assets/5d0296bb-b865-4ac8-ad3a-6cd2b2a4dfd7)
 
-Adding Student
-![Screenshot 2025-04-16 023525](https://github.com/user-attachments/assets/4dd5f830-b515-4a1b-bcb0-e3411fef5a92)
+### ➕ Adding Student
 
-Admin Login
-![Screenshot 2025-04-16 023750](https://github.com/user-attachments/assets/62ef908b-ea9f-4b94-97eb-9a1b60592c10)
+![Add Student](https://github.com/user-attachments/assets/4dd5f830-b515-4a1b-bcb0-e3411fef5a92)
 
-Admin Portal
-![Screenshot 2025-04-16 023828](https://github.com/user-attachments/assets/0bbe17ea-6a34-4f5e-a492-31af69f462f1)
+### 🔐 Admin Login
 
-Attendence Page
-![Screenshot 2025-04-16 025600](https://github.com/user-attachments/assets/32b6ecf6-3935-4cab-b5d0-2201ef296e88)
+![Login](https://github.com/user-attachments/assets/62ef908b-ea9f-4b94-97eb-9a1b60592c10)
 
-Parent Login
-![Screenshot 2025-04-16 024659](https://github.com/user-attachments/assets/5ed81756-354d-4187-8609-9594e8761311)
+### 📊 Admin Dashboard
 
-Map
-![Screenshot 2025-04-16 025338](https://github.com/user-attachments/assets/60270917-5429-499b-8300-80a8c90a0429)
+![Dashboard](https://github.com/user-attachments/assets/0bbe17ea-6a34-4f5e-a492-31af69f462f1)
 
+### 📅 Attendance Page
 
+![Attendance](https://github.com/user-attachments/assets/32b6ecf6-3935-4cab-b5d0-2201ef296e88)
 
+### 👨‍👩‍👧‍👦 Parent Login
+
+![Parent](https://github.com/user-attachments/assets/5ed81756-354d-4187-8609-9594e8761311)
+
+### 🗺️ Live Bus Tracking
+
+![Map](https://github.com/user-attachments/assets/60270917-5429-499b-8300-80a8c90a0429)
+
+---
+
+> 🎓 *This project was built as a final year project to address school transport safety using real-time computer vision, IoT, and communication tools.*
+
+```
