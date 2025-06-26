@@ -61,33 +61,9 @@ SafeRide enhances school transport safety by:
 
 ---
 
-## 🧱 3. System Design
+## 🚀 3. Installation & Deployment
 
-### 🧭 3.1 Architecture
-
-```plaintext
-[Camera] → [Face Recognition + GPS] → [Django Backend] → [SQLite DB] → [Twilio/Map API] → [Admin Panel + Parent Portal]
-````
-
-* **Frontend:** Displays live location, logs, and notifications
-* **Backend:** Processes data, controls authentication and messaging
-* **Database:** Stores student info, attendance, alerts
-* **APIs:** Face Recognition, GPS tracking, Twilio notifications
-
-### 🗃️ 3.2 Database Schema
-
-| Table      | Fields                                      |
-| ---------- | ------------------------------------------- |
-| Students   | ID, Name, Parent Contact, Bus ID, Face Data |
-| Attendance | Student ID, Time, Location, Status          |
-| Bus        | Bus ID, Route, Current Location             |
-| Alerts     | ID, Student ID, Time, Alert Type            |
-
----
-
-## 🚀 4. Installation & Deployment
-
-### 🔧 4.1 Prerequisites
+### 🔧 3.1 Prerequisites
 
 * Python 3.x
 * Django
@@ -96,7 +72,7 @@ SafeRide enhances school transport safety by:
 * Twilio API
 * Google Maps API
 
-### 🛠️ 4.2 Setup Steps
+### 🛠️ 3.2 Setup Steps
 
 ```bash
 # 1. Clone the repository
@@ -117,7 +93,7 @@ python manage.py runserver
 
 ---
 
-## 🖼️ 5. Screenshots
+## 🖼️ 4. Screenshots
 
 ### 🏠 Home Page
 
@@ -154,5 +130,3 @@ python manage.py runserver
 ---
 
 > 🎓 *This project was built as a final year project to address school transport safety using real-time computer vision, IoT, and communication tools.*
-
-```
