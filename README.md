@@ -1,25 +1,25 @@
-# 🚌 SafeRide – A Smart School Bus Safety System Using Edge Computing
+# SafeRide – A Smart School Bus Safety System Using Edge Computing
 
 SafeRide is an AI-powered, real-time school bus monitoring system that ensures the **safety and security of students** during their transportation. The system uses **face recognition**, **GPS tracking**, and **automated notifications** to keep parents and administrators informed — all in real-time.
 
 ---
 
-## 🔍 1. Introduction
+## 1. Introduction
 
-### 🎯 1.1 Purpose
+### 1.1 Purpose
 SafeRide enhances school transport safety by:
 - Recognizing students through face recognition
 - Sending real-time SMS/WhatsApp alerts to parents
 - Alerting the admin in case of unauthorized entry
 
-### 🌐 1.2 Scope
+### 1.2 Scope
 - **Face Recognition:** Track student entry/exit using facial biometrics  
 - **GPS Tracking:** Live tracking of school bus location  
 - **SMS/WhatsApp Notifications:** Instant alerts to parents  
 - **Admin Panel:** Manage students, attendance, routes, and alerts  
 - **Parent Portal:** Monitor bus location and receive notifications  
 
-### 💻 1.3 Technologies Used
+### 1.3 Technologies Used
 
 | Component  | Technology |
 |------------|------------|
@@ -32,9 +32,9 @@ SafeRide enhances school transport safety by:
 
 ---
 
-## ✅ 2. Functional Requirements
+## 2. Functional Requirements
 
-### 👤 2.1 User Roles
+### 2.1 User Roles
 
 **Admin**
 - Register students
@@ -45,25 +45,25 @@ SafeRide enhances school transport safety by:
 - Receive entry/exit notifications
 - View live bus location
 
-### ⚙️ 2.2 Core Features
+### 2.2 Core Features
 
-- **🎯 Face Recognition:**  
+- **Face Recognition:**  
   Detects and logs student presence using face data
 
-- **🛰️ GPS Tracking:**  
+- **GPS Tracking:**  
   Live tracking via Neo 8M module integrated with Google Maps
 
-- **📲 Notifications:**  
+- **Notifications:**  
   Instant SMS alerts to parents and admin
 
-- **📋 Admin Panel:**  
+- **Admin Panel:**  
   Dashboard for managing data and monitoring attendance
 
 ---
 
-## 🚀 3. Installation & Deployment
+## 3. Installation & Deployment
 
-### 🔧 3.1 Prerequisites
+### 3.1 Prerequisites
 
 * Python 3.x
 * Django
@@ -72,7 +72,7 @@ SafeRide enhances school transport safety by:
 * Twilio API
 * Google Maps API
 
-### 🛠️ 3.2 Setup Steps
+### 3.2 Setup Steps
 
 ```bash
 # 1. Clone the repository
@@ -93,37 +93,37 @@ python manage.py runserver
 
 ---
 
-## 🖼️ 4. Screenshots
+## 4. Screenshots
 
-### 🏠 Home Page
+### Home Page
 
 ![Home](https://github.com/user-attachments/assets/8564da70-bb79-499e-b6b3-55a831f5fdb3)
 
-### ✨ Key Features
+### Key Features
 
 ![Features](https://github.com/user-attachments/assets/5d0296bb-b865-4ac8-ad3a-6cd2b2a4dfd7)
 
-### ➕ Adding Student
+### Adding Student
 
 ![Add Student](https://github.com/user-attachments/assets/4dd5f830-b515-4a1b-bcb0-e3411fef5a92)
 
-### 🔐 Admin Login
+### Admin Login
 
 ![Login](https://github.com/user-attachments/assets/62ef908b-ea9f-4b94-97eb-9a1b60592c10)
 
-### 📊 Admin Dashboard
+### Admin Dashboard
 
 ![Dashboard](https://github.com/user-attachments/assets/0bbe17ea-6a34-4f5e-a492-31af69f462f1)
 
-### 📅 Attendance Page
+### Attendance Page
 
 ![Attendance](https://github.com/user-attachments/assets/32b6ecf6-3935-4cab-b5d0-2201ef296e88)
 
-### 👨‍👩‍👧‍👦 Parent Login
+### Parent Login
 
 ![Parent](https://github.com/user-attachments/assets/5ed81756-354d-4187-8609-9594e8761311)
 
-### 🗺️ Live Bus Tracking
+### Live Bus Tracking
 
 ![Map](https://github.com/user-attachments/assets/60270917-5429-499b-8300-80a8c90a0429)
 
